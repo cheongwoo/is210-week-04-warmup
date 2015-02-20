@@ -4,18 +4,18 @@
 
 
 BP_STATUS = raw_input('Tell me a stWhat is your blood pressure? ')
-INT_BP = int(BP_STATUS)
+BP_STATUS = int(BP_STATUS)
 
-if INT_BP <= 89:
-    WORD_BP = 'Low'
-elif INT_BP >= 90 and INT_BP <= 119:
-    WORD_BP = 'Ideal'
-elif INT_BP >= 120 and INT_BP <= 139:
-    WORD_BP = 'Warning'
-elif INT_BP >= 140 and INT_BP <= 159:
-    WORD_BP = 'High'
-elif INT_BP >= 160:
-    WORD_BP = 'Emergency'
+if BP_STATUS <= 89:
+    BP_STATUS = 'Low'
+elif BP_STATUS >= 90 and BP_STATUS <= 119:
+    BP_STATUS = 'Ideal'
+elif BP_STATUS >= 120 and BP_STATUS <= 139:
+    BP_STATUS = 'Warning'
+elif BP_STATUS >= 140 and BP_STATUS <= 159:
+    BP_STATUS = 'High'
+elif BP_STATUS >= 160:
+    BP_STATUS = 'Emergency'
 
-OUTPUT = 'Your status is currently: {}'.format(WORD_BP)
+OUTPUT = 'Your status is currently: {}'.format(BP_STATUS)
 print OUTPUT
